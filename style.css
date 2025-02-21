@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #222831;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar .resume-btn {
+    background: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .resume-btn:hover {
+    background: #0056b3;
+}
+
+/* Section Styles */
+.section {
+    padding: 80px;
+    text-align: center;
+}
+
+.section h1, .section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.section p {
+    max-width: 800px;
+    color: #333;
+}
+
+/* Home Section */
+.home-section {
+    background: #f4f4f4;
+    color: #333;
+    font-family: 'sacramento', cursive;
+}
+
+.home-section .h1  {
+    display: flex;
+    align-items: center;  
+}
+
+/* About Section */
+.about-section {
+    background: #fff;
+    
+}
+
+.about-section > img {
+    grid-row-end: span 2;
+    width: 250px;
+}
+
+.about-section .btn {
+    background: #00ADB5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.about-section .btn:hover {
+    background: #f4f4f4;
+}
+
+/* Projects Section */
+.projects-section {
+    background: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-grid  {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #fff;
+}
+
+/* Footer Styles */
+.footer {
+    background: #00ADB5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .nav-links {
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .project {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
